@@ -18,14 +18,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-
-
 // COMPONENTES DO PROJETO: 
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -40,11 +39,12 @@ import { LoginComponent } from './components/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatButtonModule,
-    BrowserAnimationsModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule,  
+    // Forms
+    FormsModule,
+    ReactiveFormsModule,
+    // Requisições http
+  
     // Angular Material
     MatFormFieldModule,
     MatPaginatorModule,
@@ -59,9 +59,7 @@ import { LoginComponent } from './components/login/login.component';
     MatTableModule,
     MatIconModule,
     MatListModule,
-    MatCardModule,
-    
-   
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
